@@ -183,6 +183,127 @@ header {
    margin-left: -3px;
 }
 
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1280px) {
+   .gnb_wrap {
+      height: 4.84375vw;
+   }
+   .gnb {
+      height: 5.46875vw;
+   }
+   .slogan {
+      padding: 1.79688vw 0 0.78125vw;
+   }
+   .slogan h1 {
+      width: 28.75vw;
+      height: 1.875vw;
+   }
+   .logo {
+      top: 1.48438vw;
+   }
+   .logo a {
+      width: 17.96875vw;
+      height: 2.42188vw;
+   }
+   .util {
+      top: 2.03125vw;
+      right: 3.75%;
+   }
+   .search_wrap {
+      right: 4.6875vw;
+   }
+   .search {
+      width: 1.5625vw;
+      height: 1.5625vw;
+   }
+   .lang {
+      width: 2.57812vw;
+   }
+   .lang:before {
+      width: 1.40625vw;
+      height: 1.40625vw;
+  }
+   .lang:after {
+      width: 0.39062vw;
+      height: 0.23438vw;
+      margin-top: 0.7312vw;
+   }
+   .category_wrap {
+      top: 0;
+      padding: 2.03125vw 0 4px;
+      width: 50.78125vw;
+   }
+   .category {
+      height: 2.8125vw;
+      font-size: 1.40625vw;
+      line-height: 1;
+   }
+   .category li {
+      margin: 0vw 2.34375vw;
+   }
+   .btn_main_top {
+      width: 5.46875vw;
+      margin: 0 1.25% 1.25% 0;
+   }
+   .btn_main_top span:before {
+      margin-left: -.23438vw;
+      width: .46875vw;
+   }
+}
+
+@media only screen and (max-width: 767.7px) {
+   .header_wrap, .gnb {
+      height: 12.8vw;
+   }
+   .slogan {
+      display: none;
+   }
+   .logo {
+      top: 4vw;
+      left: 4%;
+   }
+   .logo a {
+      width: 42.26667vw;
+      height: 5.86667vw;
+   }
+   .category_wrap {
+      display: none;
+   }
+   .util {
+      top: 4vw;
+      right: 4%;
+   }
+   .lang {
+      display: none;
+   }
+   .search_wrap {
+      right: 10.66667vw;
+      height: 4.93333vw;
+   }
+   .search {
+      width: 4.8vw;
+      height: 4.8vw;
+      background-image: url(../img/search_m.png);
+   }
+   .hiddenmenu {
+      display: inline-block;
+      width: 4.8vw;
+      height: 4.8vw;
+      background-image: url(../img/hiddenmenu_m.png);
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      background-size: 100% auto;
+   }
+   .btn_main_top {
+      margin: 0 2vw 2vw 0;
+      width: 12vw;
+   }
+   .btn_main_top span:before {
+      width: 1.06667vw;
+      margin-left: -.53333vw;
+      background-image: url(../img/arrow_long_m.png);
+   }
+}
+
 /* main CSS */
 
 /* main keyvisual CSS */
@@ -192,12 +313,16 @@ header {
    padding-top: 33.28125%;
 }
 
-.main_kv video {
+.pc_video {
    position: absolute;
    width: 100%;
    height: 100%;
    top: 0;
    left: 0;
+}
+
+.m_video {
+   display: none;
 }
 
 .main_kv_txt_wrap {
@@ -236,6 +361,62 @@ header {
    position: absolute;
    top: 0;
    right: 0;
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1280px) {
+   .main_kv_wrap {
+      min-height: 33.28125%;
+   }
+   .main_kv_txt_wrap {
+      padding: 2.34375vw 3.75% 9.375vw;
+   }
+   .main_kv_txt {
+      margin: 0vw 1.25vw;
+   }
+   .main_title {
+      font-size: 3.75vw;
+      letter-spacing: -0.015em;
+   }
+   .main_desc {
+      font-size: 2.1875vw;
+      letter-spacing: -0.015em;
+      padding-top: 1.5625vw;
+   }
+   .main_date {
+      font-size: 0.9375vw;
+   }
+}
+
+@media only screen and (max-width: 767.7px) {
+   .pc_video {
+      display: none;
+   }
+   .m_video {
+      display: block;
+   }
+   .main_kv {
+      padding: 0;
+   }
+   .main_kv_txt_wrap {
+      padding: 9.06667% 4% 20%;
+   }
+   .main_kv_txt {
+      margin: 0vw 4vw;
+   }
+   .main_title {
+      font-size: 10.66667vw;
+      line-height: 1.15;
+   }
+   .main_desc {
+      padding-top: 3.73333vw;
+      font-size: 4.8vw;
+      line-height: 1.16667;
+   }
+   .main_date{
+      position: static;
+      padding-top: 5.06667vw;
+      font-size: 3.73333vw;
+   }
 }
 
 /* main list CSS */
@@ -308,7 +489,6 @@ header {
 /* main list btn CSS */
 .main_list_btn {
    padding: 0 3.75% 46px;
-   height: 114px;
    text-align: center;
 }
 
@@ -347,6 +527,65 @@ header {
    line-height: 1;
    letter-spacing: 0.06em;
    padding: 10px 40px;
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1280px) {
+   .list_motion {
+      padding-bottom: 6.25vw;
+   }
+   .list_title {
+      font-size: 2.34375vw;
+      line-height: 1.2;
+      padding: 2.03125vw 1.25vw 0;
+   }
+   .list_desc {
+      font-size: 1.40625vw;
+      line-height: 1.22222;
+      padding: 1.09375vw 1.25vw 0;
+   }
+   .list_date {
+      font-size: 0.9375vw;
+      line-height: 1;
+      padding: 1.40625vw 1.25vw 0;
+   }
+   .main_list_btn {
+      padding-bottom: 3.59375vw;
+   }
+   .btn_line {
+      height: 2.34375vw;
+   }
+   .btn_text {
+      font-size: 1.40625vw;
+      padding: 0.78125vw 3.125vw;
+   }
+}
+
+@media only screen and (max-width: 767.7px) {
+   .main_list_wrap {
+      padding-top: 6.66667vw;
+   }
+   .list_motion {
+      width: 100%;
+      padding-bottom: 26.13333vw;
+   }
+   .list_title {
+      padding: 6.93333vw 4vw 0vw;
+      font-size: 7.2vw;
+      line-height: 1.14286;
+   }
+   .list_desc {
+      padding: 2.66667vw 4vw 0vw;
+      font-size: 4.8vw;
+      line-height: 1.33333;
+   }
+   .list_date {
+      padding: 2.66667vw 4vw 0vw;
+      font-size: 3.73333vw;
+   }
+   .main_list_btn {
+      padding: 0 4%;
+      padding-bottom: 20vw;
+   }
 }
 
 /* Footer CSS */
@@ -392,4 +631,42 @@ header {
 
 .more {
    margin: 0 5px;
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1280px) {
+   .footer_wrap {
+      height: 4.76562vw;
+   }
+   .footer {
+      padding: 1.875vw 3.75%;
+   }
+   .footer_logo {
+      margin-right: 1.09375vw;
+      width: 7.10938vw;
+      height: 1.09375vw;
+   }
+   .footer a, .footer span {
+      font-size: 1.09375vw;
+   }
+}
+
+@media only screen and (max-width: 767.7px) {
+   .footer {
+      padding: 3.2vw 0 4% 4%;
+   }
+   .footer_logo {
+      width: 17.73333vw;
+      height: 2.8vw;
+   }
+   .footer span:nth-child(2) {
+      font-size: 3.2vw;
+      margin: 3.2vw 0;
+      display: block;
+   }
+   .more:nth-child(3) {
+      display: none;
+   }
+   .footer a {
+      font-size: 2.93333vw;
+   }
 }
