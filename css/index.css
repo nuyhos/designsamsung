@@ -1,3 +1,395 @@
 @charset "UTF-8";
 
-/* hero CSS */
+/* header CSS */
+header {
+   position: relative;
+}
+
+/* gnb CSS */
+.gnb_wrap {
+   width: 100%;
+   height: 62px;
+}
+
+.gnb {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 70px;
+   z-index: 10000;
+   background-color: rgb(255, 255, 255);
+}
+
+.slogan {
+   position: absolute;
+   width: 100%;
+   padding: 23px 0 10px;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.slogan h1 {
+   background-image: url(../img/slogan.png);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 368px;
+   height: 24px;
+}
+
+.logo {
+   position: absolute;
+   top: 19px;
+   left: 3.75%;
+}
+
+.logo a {
+   display: inline-block;
+   background-image: url(../img/samsung_design_logo.png);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 230px;
+   height: 31px;
+}
+
+.util {
+   position: absolute;
+   top: 26px;
+   right: 3.75%;
+}
+
+.search_wrap {
+   position: absolute;
+   top: 0px;
+   right: 60px;
+}
+
+.search {
+   display: block;
+   background-image: url(../img/search.png);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 20px;
+}
+
+.lang {
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+   width: 33px;
+}
+
+.lang:before {
+   content: '';
+   display: block;
+   background-image: url(../img/lang.png);
+   background-size: 100%;
+   width: 18px;
+   height: 18px;
+}
+
+.lang:after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: inline-block;
+   background-image: url(../img/lang_arrow.png);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 5px;
+   height: 3px;
+   margin-top: 9px;
+}
+
+/* category CSS */
+.category_wrap {
+   position: sticky;
+   top: 0;
+   width: 650px;
+   margin: 0 auto;
+   padding: 26px 0 6px;
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+   z-index: 10000;
+}
+
+.category {
+   height: 36px;
+   font-family: 'SamsungOneLatin-700';
+   font-size: 18px;
+   line-height: 1;
+   letter-spacing: 0.04em;
+   display: flex;
+   justify-content: center;
+}
+
+.category li {
+   margin: 0 30px;
+}
+
+.category li a {
+   display: inline-block;
+   color: rgb(0,0,0);
+   
+}
+
+.category li a:after {
+   content: '';
+   display: block;
+   margin-top: 5px;
+   border-bottom: solid 2px rgb(0, 0, 0);  
+   transform: scaleX(0);  
+   transition: transform 250ms ease-in-out;
+}
+
+.category li a:hover:after {
+   transform: scaleX(1);
+}
+
+/* btn main top CSS */
+.btn_main_top {
+   width: 70px;
+   margin: 0 1.25% 1.25% 0;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   touch-action: manipulation;
+   z-index:10000;
+}
+
+.btn_main_top span {
+   display: block;
+   position: relative;
+   width: 100%;
+   padding-top: 100%;
+   background: rgba(248,248,248,0.8);
+}
+
+.btn_main_top span:before {
+   content:'';
+   display: block;
+   position: absolute;
+   background-image: url(../img/arrow_long.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 100% auto;
+   left: 50%;
+   top: 0;
+   width: 6px;
+   height: 100%;
+   margin-left: -3px;
+}
+
+/* main CSS */
+
+/* main keyvisual CSS */
+.main_kv {
+   position: relative;
+   width: 100%;
+   padding-top: 33.28125%;
+}
+
+.main_kv video {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.main_kv_txt_wrap {
+   width: 100%;
+   padding: 30px 3.75% 120px; 
+}
+
+.main_kv_txt {
+   margin: 0vw 1.25vw;
+   position: relative;
+}
+
+.main_title {
+   font-family: 'SamsungSharpSans-Medium', 'SamsungOneKorean-600';
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 1;
+   letter-spacing: -0.015em;
+}
+
+.main_desc {
+   font-family: 'SamsungOneKorean-400', 'SamsungOneLatin-400', 'SamsungSharpSans-Medium';
+   font-size: 28px;
+   font-weight: 400;
+   line-height: 1;
+   letter-spacing: -0.015em;
+   padding-top: 20px;
+}
+
+.main_date {
+   font-family: 'SamsungOneLatin-400', 'SamsungOneKorean-600';
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 1;
+   color: rgb(102, 102, 102);
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+/* main list CSS */
+.main_list_wrap {
+   width: 100%;
+   padding: 0 3.75%;
+}
+
+.main_list {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.list_motion {
+   width: calc(33.333% - 0.9%);
+   padding-bottom: 80px;
+}
+
+.list_box {
+   padding-top: 56.25%;
+   position: relative;
+}
+
+.list_box a {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 100%;
+   padding-top: inherit;
+   overflow: hidden;
+}
+
+.list_box a img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: scale(1);
+   transition: .6s;
+}
+
+.list_box a:hover img {
+   transform: scale(1.1);
+}
+
+.list_title {
+   font-family: 'SamsungSharpSans-Medium', 'SamsungOneKorean-600';
+   font-size: 30px;
+   line-height: 1.2;
+   letter-spacing: -0.02em;
+   padding: 26px 1.25vw 0;
+}
+
+.list_desc {
+   font-family: 'SamsungOneLatin-400', 'SamsungOneKorean-400';
+   font-size: 18px;
+   line-height: 1.22222;
+   letter-spacing: -0.02em;
+   padding: 14px 1.25vw 0;
+}
+
+.list_date {
+   font-family: 'SamsungOneLatin-400', 'SamsungOneKorean-400';
+   font-size: 12px;
+   line-height: 1;
+   padding: 18px 1.25vw 0;
+}
+
+/* main list btn CSS */
+.main_list_btn {
+   padding: 0 3.75% 46px;
+   height: 114px;
+   text-align: center;
+}
+
+.btn_more {
+   display: inline-block;
+}
+
+.btn_more span {
+   display: block;
+}
+
+.btn_line {
+   position: relative;
+   height: 30px;
+   overflow: hidden;
+}
+
+.btn_line:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   width: 0.1px;
+   height: 100%;
+   background-color: rgb(85, 85, 85);
+}
+
+.btn_more:hover .btn_line:before {
+   animation: slide-out-slide-in .8s cubic-bezier(.18,.43,.01,.96) 0s 1;
+}
+
+.btn_text {
+   font-family: 'SamsungOneLatin-400', ;
+   font-size: 18px;
+   color: rgb(0, 0, 0);
+   line-height: 1;
+   letter-spacing: 0.06em;
+   padding: 10px 40px;
+}
+
+/* Footer CSS */
+.footer_wrap {
+   width: 100%;
+   height: 61px;
+   background-color: rgb(255, 255 ,255);
+}
+
+.footer {
+   padding: 24px 3.75% 0;
+   line-height: 1;
+}
+
+.footer_logo {
+   display: inline-block;
+   background-image: url(../img/samsung_logo.png);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: 100% auto;
+   width: 91px;
+   height: 14px;
+   margin-right: 10px;
+   vertical-align: -10%;
+}
+
+.footer a {
+   font-family: 'SamsungOneKorean-400';
+   font-size: 14px;
+   line-height: 1;
+   letter-spacing: -0.08em;
+   color: rgb(136, 136, 136);
+   text-decoration: underline;
+}
+
+.footer span {
+   font-family: 'SamsungOneLatin-700';
+   font-size: 14px;
+   line-height: 1;
+   letter-spacing: -0.02em;
+   color: rgb(136, 136, 136);
+}
+
+.more {
+   margin: 0 5px;
+}

@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family:'SamsungOneKorean-600';
-  src: url(../font/SamsungOneKorean-600.woff) format('woff2'); font-weight: 400;
+  src: url(../font/SamsungOneKorean-600.woff) format('woff2'); font-weight: 600;
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family:'SamsungOneLatin-700';
-  src: url(../font/SamsungOneLatin-600.woff2) format('woff2'); font-weight: 700;
+  src: url(../font/SamsungOneLatin-700.woff2) format('woff2'); font-weight: 700;
 }
 
 @font-face {
@@ -24,6 +24,13 @@
   src: url(../font/SamsungSharpSans-Medium.woff) format('woff2'); font-weight: 400;
 }
 
+/* 버튼 애니메이션 */
+@keyframes slide-out-slide-in {
+  0% {transform: translateY(0%);}
+  50% {transform: translateY(100%);}
+  50.02% {transform: translateY(-100%);}
+  100% {transform: translateY(0%);}
+}
 
 /* font style */
 body, input, textarea, select, button, table, p {
